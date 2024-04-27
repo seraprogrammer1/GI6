@@ -1,0 +1,163 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+
+    /* classes */
+    .flex_row {display: flex;}
+    .flex_column{display: flex; flex-direction: column;}
+    .grow1 {flex-grow: 1;}
+    .Jspace_evenly {justify-content: space-evenly;}
+    .Jcenter {justify-content: center;}
+    .Acenter {align-items: center;}
+    .fill {height: 100%; width: 100%;}
+    .small_space > * {margin: 10px;}
+    .unselectable {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
+
+    /* ids */
+    #option_selector {
+
+        padding-top: 60px;
+        div {
+            padding: 10px;
+            background-color: rgba(125, 107, 107, 0.5);
+            border: 2px solid transparent;
+            border-radius: 300px;
+        }
+        div:hover {
+            background-color:rgb(125, 107, 107);
+            span {
+                background-color: rgba(236, 236, 236);
+            }
+        }
+        span {
+            height: 500px;
+            width: 500px;
+
+            text-align: center;
+            font-weight: 500;
+            font-size: 50px;
+            color: black;
+
+            background-color: white;
+
+            border: 5px solid rgb(125, 107, 107);
+            border-radius: 300px;
+
+            img {
+                max-height: 400px;
+                max-width: 400px;
+            }
+        }
+    }
+    #textboxHolder {
+        margin: 40px 0 ;
+
+        
+        span {
+            border: 3px solid rgb(125, 107, 107);
+            border-radius: 5px;
+            background-color: white;
+
+            label {
+                height: 30px;
+                font-weight: 500;
+                font-size: 21px;
+                margin-right: 10px;
+                text-align: end;
+                margin: 0;
+                padding: 2px 2px 2px 2px;
+                border-radius: 5px 0 0 5px;
+            }
+            label:hover {
+                background-color: rgba(236, 236, 236);
+            }
+    
+            input {
+                height: 30px;
+                width: 175px;
+                font-size: 18px;
+                background-color: transparent;
+                border: none;
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+    }
+    #scoreHolder {
+        margin: 60px 0;
+
+        div {
+            border: 5px solid rgb(125, 107, 107);
+            border-radius: 10px;
+            background-color: white;
+
+            span {
+                text-align: center;
+                font-weight: 500;
+                font-size: xx-large;
+            }
+
+            button {
+                border: 0;
+                background-color: rgb(255, 135, 135);
+                border-top: 2px solid rgb(125, 107, 107);
+                border-radius: 0 0 5px 5px;
+                font-weight: 500;
+                font-size: 20px;
+            }
+            button:hover {
+                background-color: rgb(255, 60, 60);
+            }
+
+        }
+
+        div > span:first-child {
+            border-bottom: 2px solid rgb(125, 107, 107);
+        }
+        div > span:last-child {
+            margin-top: 2px;
+        }
+    }
+
+    body{
+        height: 100%;
+        width: 100%;
+
+        header {
+            height: 100px;
+            background-color: rgb(236, 236, 236);
+
+            h1 {
+                height: inherit;
+                text-align: center;
+                font-size: 60px;
+                border-bottom: 10px solid rgb(125, 107, 107);
+            }
+        }
+        main {
+            width: 100%;
+            background-color: rgb(107, 118, 125);
+
+            h3 {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 50px;
+            }
+
+            h4 {
+                text-align: center;
+                font-size: 40px;
+                margin: 20px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex_column">
+    <header>
+        <h1>Rock Paper Scissor</h1>
+    </header>
+    
+    <main class="grow1">
+
+        <div id="scoreHolder" class="flex_row grow1 Jcenter">
+            <div class="flex_column Jcenter">
+                <span class="small_space">
+                    <span>User</span>
+                    <span>Comp</span>
+                </span>
+                <span class="flex_row Jspace_evenly">
+                    <playerScore>0</playerScore>:<compScore>0</compScore>
+                </span>
+                <button>reset</button>
+            </div>
+        </div>
+
+        <h3>Let the game Begin!!!</h3>
+
+        <div id="option_selector" class="flex_row grow1 Jspace_evenly">
+            <div>
+                <span class="flex_column Jcenter Acenter unselectable">
+                    <img class="" src="images/Rock.png" alt="fist">
+                    Rock
+                </span>
+            </div>
+            <div>
+                <span class="flex_column Jcenter Acenter unselectable">
+                    <img class="" src="images/Paper.png" alt="hand open">
+                    Paper
+                </span>
+            </div>
+            <div>
+                <span class="flex_column Jcenter Acenter unselectable">
+                    <img class="" src="images/Scissors.png" alt="hand cissors">
+                    Scissor
+                </span>
+            </div>
+        </div>
+
+        <div id="textboxHolder" class="flex_row grow1 Jcenter Acenter">
+            <span class="flex_row">
+                <label for="textbox" class="unselectable">Enter:</label>
+                <input id="textbox" type="text" placeholder="Rock, Paper, Scissor">
+            </span>
+        </div>
+
+        <h4>Take your Turn</h4>
+    </main>
+
+    <footer></footer>
+
+    <script src="code.js" ></script>
+</body>
+</html>
