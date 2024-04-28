@@ -45,6 +45,7 @@ function Game(player_move){
 function Reset(){
     playerScore.innerHTML = 0;
     compScore.innerHTML = 0;
+    h3.innerHTML = "Let the game Begin!!!"
 }
 
 // add all the children of option_selector to and eventlistener
